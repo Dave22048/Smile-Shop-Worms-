@@ -1,1 +1,1 @@
-# Smile-Shop-Worms-
+# Smi2le.Head, Grow & CBD Shop Worms
