@@ -1,6 +1,42 @@
-git clone https://github.com/Dave22048/Smile-Shop-Worms-.git
-cd Smile-Shop-Worms-
-# index.html hier rein kopieren
-git add index.html
-git commit -m "Add Smile.Worms test shop singlepage"
-git push origin main
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Smile.Worms — Head & Grow Shop (Testmodus)</title>
+  <style>
+    :root{--bg:#0b0b0b;--card:#0f1720;--accent:#16a34a;--gold:#f59e0b;--rasta1:#006400;--rasta2:#FFD700;--rasta3:#8B0000}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#071018 0%, #071117 60%, #04100b 100%);color:#e6eef0}
+    .container{max-width:1100px;margin:28px auto;padding:24px}
+    header{display:flex;align-items:center;gap:18px}
+    .logo{display:flex;align-items:center;gap:12px}
+    .leaf{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--rasta2),var(--rasta1));display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(0,0,0,.6)}
+    .leaf svg{width:36px;height:36px;filter:drop-shadow(0 2px 6px rgba(0,0,0,.6))}
+    h1{margin:0;font-size:20px}
+    p.sub{margin:0;opacity:.8}
+    nav{margin-left:auto}
+    .btn{background:var(--accent);color:#021202;padding:10px 14px;border-radius:10px;border:none;cursor:pointer;font-weight:600}
+    /* ... Rest des Styles und Scripts ... */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <div class="leaf" aria-hidden>
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C12 2 6 6 4 10c-1.5 3 1 8 8 12 7-4 9.5-9 8-12-2-4-8-8-8-8z" fill="white" opacity=".95"/></svg>
+        </div>
+        <div>
+          <h1>Smile.Worms — Head, Grow &amp; CBD Shop</h1>
+          <p class="sub">Kleiner Shop — Testmodus. Design: Rasta / Leaf / Easy Vibes</p>
+        </div>
+      </div>
+      <nav>
+        <button class="btn" id="open-login">Login</button>
+      </nav>
+    </header>
+    <!-- Rest der Seite mit Produkten, Warenkorb usw. -->
+  </div>
+</body>
+</html>
