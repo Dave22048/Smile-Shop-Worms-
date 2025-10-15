@@ -1,0 +1,131 @@
+<!--
+  Datei: index.html
+  Zweck: Single-file Website zum direkten Hochladen auf GitHub Pages.
+  Anleitung:
+   1) Neues Repository auf GitHub erstellen: z.B. "username.github.io" (optional) oder beliebiger Repo-Name.
+   2) index.html in das Repo hochladen (Branch: main).
+   3) GitHub > Settings > Pages (oder Settings > Pages) öffnen und Branch (main) wählen, Root(/) als Ordner.
+   4) Warten — Seite ist unter https://<username>.github.io/<repo-name>/ erreichbar (bei repo-namen = username.github.io ist es https://<username>.github.io).
+
+  Anpassungen: Text, Bilder (ersetze die Platzhalter-URLs), Farben, Links.
+--><!doctype html>
+
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meine GitHub Pages Website</title>
+  <meta name="description" content="Einfaches Template für GitHub Pages — sofort einsatzbereit." />  <!-- Favicon (kleines Emoji als Platzhalter) -->  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='0.9em' font-size='90'%3E%F0%9F%8D%BA%3C/text%3E%3C/svg%3E">  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --accent:#7ee787; --muted:#9aa4b2; --glass: rgba(255,255,255,0.04);
+      --radius:14px; --maxw:1100px; font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,#071022 0%, #0f1724 100%);color:#e6eef6}
+    .wrap{max-width:var(--maxw);margin:40px auto;padding:24px}
+
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo .mark{width:52px;height:52px;background:linear-gradient(135deg,var(--accent),#46b3ff);border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700}
+    nav a{color:var(--muted);text-decoration:none;margin-left:18px}
+
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:28px;margin-top:28px;align-items:center}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:22px;border-radius:var(--radius);box-shadow:0 6px 30px rgba(2,6,23,0.6)}
+    h1{margin:0 0 10px 0;font-size:34px}
+    p.lead{margin:0;color:var(--muted)}
+
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+    .feature{padding:14px;border-radius:12px;background:var(--glass);text-align:center}
+    .cta{display:inline-block;margin-top:16px;padding:10px 16px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#46b3ff);color:#042; font-weight:700;text-decoration:none}
+
+    footer{margin-top:36px;color:var(--muted);font-size:14px;text-align:center}
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .features{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:520px){
+      .features{grid-template-columns:1fr}
+      .logo .mark{width:44px;height:44px}
+    }
+  </style></head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <div class="mark">GK</div>
+        <div>
+          <div style="font-weight:700">Dein Projekt</div>
+          <div style="font-size:12px;color:var(--muted)">Schnell. Einfach. Auf GitHub.</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+    </header><section class="hero">
+  <div>
+    <div class="card">
+      <h1>Minimaler Starter für GitHub Pages</h1>
+      <p class="lead">Eine saubere, responsive Single‑File Website. Kopiere diese Datei direkt in dein Repo und aktiviere GitHub Pages — läuft.</p>
+
+      <div class="features" id="features" style="margin-top:18px;">
+        <div class="feature">
+          <strong>Responsive</strong>
+          <div style="font-size:13px;color:var(--muted);margin-top:8px">Passt auf Handy, Tablet & Desktop.</div>
+        </div>
+        <div class="feature">
+          <strong>Single File</strong>
+          <div style="font-size:13px;color:var(--muted);margin-top:8px">HTML + CSS + JS in einer Datei — super easy.</div>
+        </div>
+        <div class="feature">
+          <strong>Customize</strong>
+          <div style="font-size:13px;color:var(--muted);margin-top:8px">Farben, Texte, Bilder — alles austauschbar.</div>
+        </div>
+      </div>
+
+      <a class="cta" href="#contact">Los geht's</a>
+    </div>
+  </div>
+
+  <aside>
+    <div class="card">
+      <h3 style="margin-top:0">Quick Preview</h3>
+      <p style="margin:6px 0;color:var(--muted)">Beispielfoto und kurze Beschreibung. Ersetze das Bild mit deinem eigenen Link.</p>
+      <div style="height:160px;border-radius:10px;background:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=60') center/cover;filter:contrast(1.05);margin-top:10px"></div>
+    </div>
+  </aside>
+</section>
+
+<section id="contact" style="margin-top:26px">
+  <div class="card">
+    <h2 style="margin:0 0 6px 0">Kontakt & Deployment</h2>
+    <p style="margin:0 0 12px;color:var(--muted)">So bringst du die Seite live:</p>
+    <ol style="color:var(--muted);margin-left:18px">
+      <li>Neues GitHub Repo erstellen oder bestehendes Repo nutzen.</li>
+      <li>index.html hochladen (root des Repos).</li>
+      <li>In den Repo-Settings > Pages Branch: <code>main</code> wählen und <code>/ (root)</code> setzen.</li>
+      <li>Kurz warten — deine Seite ist unter <code>https://&lt;username&gt;.github.io/&lt;repo-name&gt;/</code> erreichbar.</li>
+    </ol>
+
+    <p style="margin-top:10px;color:var(--muted)"><strong>Tipp:</strong> Wenn du ein persönliches Pages-Repo erstellst und es <code>username.github.io</code> nennst, wird die Seite direkt unter <code>https://username.github.io/</code> verfügbar.</p>
+  </div>
+</section>
+
+<footer>
+  <div>Made with ❤️ — Kopier die Datei, pass an und sag Bescheid wenn du ein Logo oder Farben willst.</div>
+</footer>
+
+  </div>  <script>
+    // Kleine Interaktion: hash-scroll für nav links
+    document.querySelectorAll('nav a').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const href = a.getAttribute('href');
+        if(href.startsWith('#')){ document.querySelector(href).scrollIntoView({behavior:'smooth'}); }
+      })
+    });
+  </script></body>
+</html>
